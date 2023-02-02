@@ -1,25 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
+import Header from './components/Header';
+import NavBar from './components/NavBar';
+import CurrentView from './components/CurrentView';
+import Footer from './components/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state ={
+      CurrentViewMarker: "Home",
+    };
+
+    this.updateNav = this.updateNav.bind(this);
+    this.returnNav = this.returnNav.bind(this);
+   
+    }
+
+  returnNav(){
+    return(this.CurrentViewMarker);
+  }
+
+  updateNav(updatedNav) {
+    this.setState({
+      CurrentViewMarker: this.state.CurrentViewMarker = updatedNav,
+    });
+  }
+
+  render(){
+
+    return (
+    
+    <>
+        <div className='Everything'>
+          <Header className='Header'/>
+            <div className='NavContent'>
+                <NavBar className='NavBar' CurrentViewMarker={this.state} updateNavigation={this.updateNav}/>
+                <CurrentView className='CurrentView' CurrentViewMarker={this.state} returnNavigation={this.returnNav}/>   
+            </div>
+            <Footer className='Footer'/>
+        </div>
+    </>
+  
   );
+  }
 }
 
 export default App;
