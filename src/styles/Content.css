@@ -3,13 +3,15 @@
     flex-direction: column;
     padding: 50px;
     margin-top: 250px;
+    align-items: center;
         
 }
 
 .Para{
     flex: auto;
-    font-size: x-large;
+    font-size: 1.4em;
     text-align: center;
+    width: 80%;
 }
 
 .Title{
@@ -22,7 +24,7 @@ font-weight: 900;
 .Pic{
     flex: 0 1 1;
     margin: 50px;
-    width: 500px;
+    width: 40%;
     height: auto;
     border-radius: 50px;
 }
