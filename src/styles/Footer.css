@@ -10,7 +10,10 @@
 }
 
 .FooterLink {
+    flex: auto;
     color: black;
+    font-size: .75em;
+    text-decoration: none;
 }
 
 .FooterLink:hover{
