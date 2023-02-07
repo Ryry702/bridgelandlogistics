@@ -15,7 +15,6 @@ flex-direction: row;
 align-items: center;
 justify-content: space-evenly;
 width: 100%;
-padding: 30px;
 }
 
 .LogoContainer{
@@ -23,13 +22,12 @@ padding: 30px;
     align-items: center;
     justify-content: center;
     border: 0px;
-    flex: auto;
     background-color: black;
     border-color: black;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    margin: 100px;
+    height: 8em;
+    width: 8em;
+    margin: 2%;
 }
 
 .CompanyNameContainer{
@@ -39,16 +37,14 @@ padding: 30px;
     border: 0px;
     border-radius: 30px;
     height: 125px;
-    width: 1000px;
+    width: 30%;
     justify-content: center;
-    align-items: center;
-    
-    
+    align-items: center; 
 }
 
 h1 {
     flex: auto;
-    font-size: 2.5rem;
+    font-size: 2em;
     margin: 3px;
     justify-content: center;
     align-items: center;
