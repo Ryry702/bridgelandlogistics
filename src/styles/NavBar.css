@@ -4,9 +4,8 @@
     padding: 2%;
     background-color: blue;
     width: 100%;
-    opacity: 80%;
-    position: fixed;
-    margin-top: 150px;
+    position: sticky; top: 0;
+    margin-top: 0;
 }
 
 .NavButton {
@@ -20,7 +19,7 @@
     border: 2px;
     border-color: black;
     opacity: 100%;
-    font-size: 1em;
+    font-size: 2.2vw;
     font-weight: 900;
     background-color: blue;
     
@@ -29,4 +28,13 @@
 .NavButton:hover {
     transform: scale(1.2);    
     border-style: solid;
+}
+
+.NavButton:active{
+    border-style: solid;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
 }

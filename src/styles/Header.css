@@ -2,11 +2,11 @@
     display: flex;
     height: 150px;
     padding: 0px;
-    background-color: none;
+    background-color: blue;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    width: 100%;
 }
 
 .HeaderTitle{
@@ -16,7 +16,6 @@ align-items: center;
 justify-content: space-evenly;
 width: 100%;
 padding: 30px;
-position: fixed;
 }
 
 .LogoContainer{
@@ -25,7 +24,7 @@ position: fixed;
     justify-content: center;
     border: 0px;
     flex: auto;
-    background-color: blue;
+    background-color: black;
     border-color: black;
     border-radius: 50%;
     height: 150px;
@@ -36,7 +35,7 @@ position: fixed;
 .CompanyNameContainer{
     display: flex;
     border-color: black;
-    background-color: blue;
+    background-color: black;
     border: 0px;
     border-radius: 30px;
     height: 125px;
@@ -53,4 +52,5 @@ h1 {
     margin: 3px;
     justify-content: center;
     align-items: center;
+    color: white;
 }
