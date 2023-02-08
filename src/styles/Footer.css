@@ -14,6 +14,9 @@
     color: black;
     font-size: .75em;
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .FooterLink:hover{
